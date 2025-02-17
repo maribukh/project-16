@@ -72,6 +72,12 @@ h5 {
     position: absolute;
 }
 
+.img {
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
 .backgorund-decor {
     top: -9rem;
     right: 0rem;
@@ -229,11 +235,24 @@ span {
 
 /* section: services */
 
+.services {
+    margin-top: 13.37rem;
+}
+
 .services-container {
     width: 81.75%;
     margin: auto;
-    margin-top: 6rem;
+
     margin-bottom: 7.68rem;
+    position: relative;
+}
+
+.services-container .img {
+    width: 10.18rem;
+    height: 9.31rem;
+
+    margin: auto;
+    position: relative;
 }
 
 .services-container .section,
@@ -263,41 +282,56 @@ span {
 .services-container .cards-container {
     width: 100%;
     display: flex;
-    align-items: center;
     justify-content: space-between;
 }
 
 .services-container .top {
     width: 100%;
-
-    border: 1px solid red;
 }
 
 /* icons */
 
-.img {
-    width: 10.18rem;
-    height: 9.31rem;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 1px solid blue;
-    margin: auto;
-}
 
-.img-1 {
+.services-container .img-1 {
     background-image: url(../images/icons/1.svg);
 }
 
-.img-2 {
+.services-container .img-2 {
     background-image: url(../images/icons/2.svg);
 }
 
-.img-3 {
+.services-container .img-3 {
     background-image: url(../images/icons/3.svg);
 }
 
-.img-4 {
+.services-container .img-4 {
     background-image: url(../images/icons/4.svg);
+}
+
+.card-decor {
+    z-index: -1;
+}
+
+.card-decor-1 {
+    right: 1.81rem;
+    bottom: 1.81rem;
+}
+
+.card-decor-2 {
+    left: 3rem;
+    bottom: 4rem;
+}
+
+.card-decor-3 {
+    right: 3rem;
+    bottom: 4rem;
+}
+
+
+
+.pluses-decor {
+    right: 0rem;
+    top: 0rem;
 }
 
 .services-container .card {
@@ -326,8 +360,36 @@ span {
     width: 68%;
 }
 
+/* section: destinations */
+
+.destinations .cards-container {
+    width: 86.81%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.destinations .card {
+    width: 30%;
+}
+
+.destinations .top {}
+
+.description img {
+    width: 100%;
+}
+
+.destinations .img-1 {
+    background-image: url(../images/destinations/italia.png);
+}
+
+.destinations .img-2 {
+    background-image: url(../images/destinations/london.jpg);
+}
+
+.destinations .img-3 {
+    background-image: url(../images/destinations/full-evrope.png);
+}
+
 .no-margin {
     margin-top: none !important;
 }
-
-

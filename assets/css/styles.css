@@ -455,10 +455,15 @@ h2 {
 }
 
 .destinations .img-size {
-    width: 19.6rem;
+    /* width: 19.6rem; */
     height: 20.5rem;
+    background-size: cover;
     border-top-left-radius: 1.5rem;
     border-top-right-radius: 1.5rem;
+}
+
+.destinations .top img {
+    width: 100%;
 }
 
 .destinations span {
@@ -466,7 +471,6 @@ h2 {
 }
 
 .destinations .about {
-    margin-top: 1.68rem;
     margin-bottom: 1.125rem;
     display: flex;
     align-items: center;
@@ -481,13 +485,29 @@ h2 {
     width: 86.81%;
     display: flex;
     justify-content: space-between;
+    margin: auto;
+    position: relative;
 }
 
 .destinations .card {
-    width: 30%;
+    position: relative;
+    width: 31%;
     border-radius: 1.5rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
+.destinations .bottom {
+    padding-top: 1.68rem;
+    padding-bottom: 2.625rem;
+    padding-left: 1.25rem;
+    padding-right: 1.625rem;
+}
+
+.spirall-decor {
+    bottom: 2.93rem;
+    right: -4.5rem;
+    z-index: -2;
+}
 
 .description img {
     width: 100%;

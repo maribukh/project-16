@@ -38,11 +38,18 @@ header li:hover {
     border-bottom: 1px solid #212832;
 }
 
-.right-side a:hover {
+/* .right-side a:hover {
+
+  border-radius: 0.3125rem;
+  transform: scale(1);
+} */
+
+header .right-side .btn-border {
     border: 1px solid #212832;
     padding: 0.56rem 1.375rem;
+    position: relative;
+    top: -0.6rem;
     border-radius: 0.3125rem;
-    transform: scale(1);
 }
 
 select {
@@ -106,12 +113,28 @@ header {
 
 nav {
     width: 40%;
+    line-height: 1.35rem;
+}
+
+nav a,
+header .right-side a {
+    font-size: 1.06rem;
+    font-weight: 400;
+}
+
+nav,
+header .right-side {
+    margin-top: 0.3125rem;
+}
+
+.header-content .middle li {
+    line-height: 1.35rem;
 }
 
 .header-content .right-side {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 22.67%;
 }
 
@@ -321,7 +344,6 @@ span {
 }
 
 .img {
-
     background-repeat: no-repeat;
     background-position: center;
     margin: auto;
@@ -387,11 +409,114 @@ span {
 }
 
 .booking-steps .container {
+    display: flex;
+    justify-content: space-between;
     width: 74.16%;
 }
 
-.booking-steps .container .left-side {
+.booking-steps .container .steps {
     width: 45.87%;
+}
+
+.booking-steps .container .right-side-container {
+    width: 43.53%;
+}
+
+.booking-steps .container .right-side-container .top {
+    width: 20rem;
+    height: 10rem;
+    margin: 0;
+    background-image: url(/assets//images/booking-steps/mainphoto.svg);
+}
+
+.booking-steps .container .right-side-container .card {
+    width: 76.28%;
+    padding: 1.25rem 1.56rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    border-radius: 1.625rem;
+    z-index: 1;
+}
+
+.booking-steps .right-side-container h2 {
+    color: #080809;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.booking-steps .right-side-container p,
+.booking-steps .right-side-container span {
+    color: #84829a;
+    font-weight: 500;
+}
+
+.booking-steps .right-side-container p {
+    margin-top: 0.81rem;
+    margin-bottom: 1.3125rem;
+}
+
+.booking-steps .right-side-container .span-line {
+    font-weight: 300;
+    margin-right: 0.81rem;
+}
+
+.booking-steps .icons-container {
+    width: 37.56%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.875rem;
+}
+
+.booking-steps .icons-container .icon {
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 100%;
+}
+
+.booking-steps .right-side-container .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-steps .right-side-container .bottom img {
+    margin-right: 1rem;
+}
+
+.booking-steps .on-going-card {
+    width: 71%;
+    position: absolute;
+    display: flex;
+    background-color: white;
+    padding: 1.25rem;
+    border: 1px solid red;
+    font-weight: 500;
+}
+
+.booking-steps .on-going-card h4 {
+    font-size: 1.125rem;
+}
+
+.booking-steps .on-going-card span {
+    color: #8A79DF;
+}
+
+.booking-steps .on-going-card img {
+    border-radius: 100%;
+    margin-right: 0.68rem;
+}
+
+
+.circle-decor {
+
+    position: absolute;
+
+    z-index: -1;
+    bottom: 0rem;
+    left: 0rem;
 }
 
 .booking-steps h2 {
@@ -406,6 +531,7 @@ span {
 }
 
 .step-card {
+    width: 100%;
     display: flex;
 }
 
@@ -423,7 +549,7 @@ span {
 }
 
 .steps-list .icon:hover {
-    background-color: #14183e
+    background-color: #14183e;
 }
 
 .step-card--choose .icon {
@@ -442,7 +568,6 @@ span {
     background-color: #006380;
 }
 
-
 .p-relative {
     position: relative;
 }
@@ -450,12 +575,11 @@ span {
 /* section: destinations */
 
 .destinations p,
-h2 {
+.destinations h2 {
     text-align: center;
 }
 
 .destinations .img-size {
-    /* width: 19.6rem; */
     height: 20.5rem;
     background-size: cover;
     border-top-left-radius: 1.5rem;
@@ -478,7 +602,7 @@ h2 {
 }
 
 .destinations .about p {
-    color: #5E6282;
+    color: #5e6282;
 }
 
 .destinations .cards-container {
@@ -525,6 +649,6 @@ h2 {
     background-image: url(../images/destinations/full-evrope.png);
 }
 
-.no-margin {
+.booking-steps .no-margin {
     margin-top: none !important;
 }

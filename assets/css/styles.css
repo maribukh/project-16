@@ -12,8 +12,7 @@ body {
   font-family: "Volkhov";
   font-style: bold;
   font-weight: 700;
-  src: url(https://fonts.gstatic.com/s/volkhov/v17/SlGVmQieoJcKemNeeY4hkHNSbQ.woff2)
-    format("woff2");
+  src: url(https://fonts.gstatic.com/s/volkhov/v17/SlGVmQieoJcKemNeeY4hkHNSbQ.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
     U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193,
     U+2212, U+2215, U+FEFF, U+FFFD;
@@ -722,7 +721,72 @@ span {
 
 .testimonials .right-side-container {
   width: 57.42%;
-  border: 1px solid;
+  /* border: 1px solid; */
+}
+
+.testimonial-card p {
+  color: #5E6282;
+  font-weight: 500;
+}
+
+.testimonial-card {
+  width: 75.33%;
+  padding-top: 1.75rem;
+  padding-bottom: 2.125rem;
+  padding-left: 2.125rem;
+  padding-right: 2.125rem;
+
+}
+
+.testimonials .box-shadow-1 {
+  box-shadow:
+    0px 1.85px 3.15px 0px #00000001,
+    0px 8.15px 6.52px 0px #00000002,
+    0px 20px 13px 0px #00000003,
+    0px 38.52px 25.48px 0px #00000003,
+    0px 64.81px 46.85px 0px #00000004,
+    0px 100px 80px 0px #00000005;
+}
+
+.testimonials .box-shadow-2 {
+  box-shadow:
+    0px 1.85px 3.15px 0px #00000001,
+    0px 8.15px 6.52px 0px #00000002,
+    0px 20px 13px 0px #00000003,
+    0px 38.52px 25.48px 0px #00000003,
+    0px 64.81px 46.85px 0px #00000004,
+    0px 100px 80px 0px #00000005;
+}
+
+.testimonial-card .person-details {
+  margin-top: 2.125rem;
+}
+
+.testimonial-card .h4-name {
+  color: #5E6282;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.testimonial-card .p-14 {
+  font-size: 0.875rem;
+}
+
+.testimonial-card .p-description {
+  width: 79.76%;
+
+}
+
+.testimonial-card-1 {
+  background-color: white;
+}
+
+.testimonial-card-2 {
+  width: 100%;
+  position: absolute;
+  top: 5.4rem;
+  z-index: -2;
+  border: 2px solid #F7F7F7
 }
 
 .booking-steps .no-margin {

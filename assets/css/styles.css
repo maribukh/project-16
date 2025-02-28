@@ -480,6 +480,12 @@ span {
 .booking-steps .right-side-container .bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.booking-steps .bottom .left-side-content {
+  display: flex;
+  align-items: center;
 }
 
 .booking-steps .right-side-container .bottom img {
@@ -653,6 +659,8 @@ span {
   padding-left: 1.25rem;
   padding-right: 1.625rem;
 }
+
+
 
 .spirall-decor {
   bottom: 2.93rem;
